@@ -21,6 +21,7 @@ choice
         bool "English"
     config LANGUAGE_JA_JP
         bool "Japanese"
+
 endchoice
 
 
@@ -33,6 +34,9 @@ choice CONNECTION_TYPE
         bool "MQTT + UDP"
     config CONNECTION_TYPE_WEBSOCKET
         bool "Websocket"
+    config BOARD_TYPE_M5STICK_C
+        bool "M5Stick-C"
+
 endchoice
 
 config WEBSOCKET_URL
@@ -64,6 +68,8 @@ choice BOARD_TYPE
         bool "面包板（WiFi） ESP32 DevKit"
     config BOARD_TYPE_BREAD_COMPACT_ESP32_LCD
         bool "面包板（WiFi+ LCD） ESP32 DevKit"
+    config BOARD_TYPE_M5STICK_C
+        bool "M5Stick-C"
     config BOARD_TYPE_ESP32_CGC
         bool "ESP32 CGC"
     config BOARD_TYPE_ESP_BOX_3
@@ -148,6 +154,9 @@ choice BOARD_TYPE
         bool "无名科技星智1.54(ML307)"
     config BOARD_TYPE_SENSECAP_WATCHER
         bool "SenseCAP Watcher"
+    config BOARD_TYPE_M5STICK_C
+        bool "M5Stick-C"
+
 endchoice
 
 choice DISPLAY_OLED_TYPE
@@ -160,6 +169,9 @@ choice DISPLAY_OLED_TYPE
         bool "SSD1306, 分辨率128*32"
     config OLED_SSD1306_128X64
         bool "SSD1306, 分辨率128*64"
+    config BOARD_TYPE_M5STICK_C
+        bool "M5Stick-C"
+
 endchoice
 
 choice DISPLAY_LCD_TYPE
@@ -198,6 +210,9 @@ choice DISPLAY_LCD_TYPE
         bool "GC9A01, 分辨率240*240, 圆屏"
     config LCD_CUSTOM
         bool "自定义屏幕参数"
+    config BOARD_TYPE_M5STICK_C
+        bool "M5Stick-C"
+
 endchoice
 
 choice DISPLAY_ESP32S3_KORVO2_V3
@@ -210,6 +225,9 @@ choice DISPLAY_ESP32S3_KORVO2_V3
         bool "ST7789, 分辨率240*280"
     config LCD_ILI9341
         bool "ILI9341, 分辨率240*320"
+    config BOARD_TYPE_M5STICK_C
+        bool "M5Stick-C"
+
 endchoice
 
 config USE_WECHAT_MESSAGE_STYLE

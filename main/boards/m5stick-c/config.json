@@ -1,0 +1,21 @@
+{
+    "target": "esp32",
+    "builds": [
+        {
+            "name": "m5stick-c",
+            "sdkconfig_append": [
+                "CONFIG_AXP192_POWER_MANAGEMENT=y",
+                "CONFIG_SH200I_GYROSCOPE=y",
+                "CONFIG_LCD_ST7735_128X160=y",
+                "CONFIG_AXP192_CHARGE_CURRENT_488MA=y",
+                "CONFIG_AXP192_CHARGE_VOLTAGE_4_2V=y",
+                "CONFIG_SH200I_I2C_SDA=33",
+                "CONFIG_SH200I_I2C_SCL=32",
+                "CONFIG_WIFI_ANTENNA_EXTERNAL=y",
+                "CONFIG_RF_TX_POWER_20=y",
+                "CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y",
+                "CONFIG_PARTITION_TABLE_CUSTOM_FILENAME=\"partitions_4M.csv\""
+            ]
+        }
+    ]
+}
