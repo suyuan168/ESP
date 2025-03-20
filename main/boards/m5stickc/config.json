@@ -1,0 +1,11 @@
+{
+    "target": "esp32",
+    "builds": [
+        {
+            "name": "m5stickc",
+            "sdkconfig_append": [
+                "CONFIG_SPIRAM_MODE_QUAD=y"
+            ]
+        }
+    ]
+}
